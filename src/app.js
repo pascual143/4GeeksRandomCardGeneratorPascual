@@ -27,13 +27,6 @@ function randomCard() {
   }
 }
 
-const suits = [":hearts:", ":spades:", ":clubs:", ":diamonds:"];
-const cards = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
-window.onload = function() {
-  //write your code here
-  randomCard();
-};
-
 //function to change color on red or black
 
 //pseudocode
