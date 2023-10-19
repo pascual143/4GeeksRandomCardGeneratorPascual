@@ -13,14 +13,22 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body class="bg-success">
-    <div class="container">
-      <div class="card text-center m-5">
-        <div id="suitCard" class="card-header"></div>
+    <h1>Generator Random Card</h1>
+    <h2>
+      BE AWARE that this page will reload automaticly every 10 seconds
+    </h2>
+    <div class="row justify-content-center">
+      <div id="container" class="card m-5 col-2 ">
+        <div class="card-header naipe1"><i></i></div>
 
         <div id="randomCard" class="card-body"></div>
 
-        <div id="suitCard" class="card-header"></div>
+        <div class="card-header naipe2"></div>
       </div>
     </div>
+
+    <button onclick="buttonCard()">
+      Click to Generate a Random Card
+    </button>
   </body>
 </html>

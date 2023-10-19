@@ -1,1 +1,37 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+button,
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#container {
+  margin: 0 auto;
+  align-items: center;
+  height: 300px;
+}
+
+.card {
+  box-shadow: 5px 7px 5px black;
+}
+.naipe1 {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  background-color: white;
+  border-bottom: none;
+}
+
+.naipe2 {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background-color: white;
+}
+
+#randomCard {
+  line-height: 150px;
+}
