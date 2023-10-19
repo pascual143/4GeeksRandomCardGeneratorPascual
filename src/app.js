@@ -7,21 +7,20 @@ const cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
 
 window.onload = function() {
   //write your code here
-  randomCard();
-  //colorSuit();
+  generateCard();
 
   // function random
-  function randomCard() {
+  function generateCard() {
     let suit = Math.floor(Math.random() * suits.length);
     let card = Math.floor(Math.random() * cards.length);
 
-    let randomSuit = suits[suit];
-    let randomCard = cards[card];
-
-    document.getElementById("randomCard").innerHTML = randomCard;
+    document.getElementById("randomCard").innerHTML = card;
     document.getElementById("suitCard").innerHTML = randomSuit;
 
-    //var colorSuits = colorSuit();
+    //converting the random number to string
+    let randomSuit = suits[suit];
+
+    //Change colours to red or blank depends of the nipe
     if (randomSuit === "♥" || randomSuit === "♦") {
       document.querySelector("#suitCard").style.color = "red";
     } else if (randomSuit === "♠" || randomSuit === "♣") {
@@ -29,7 +28,6 @@ window.onload = function() {
     }
   }
 };
-//function to change color on red or black
 
 //pseudocode
 // crear html basico
