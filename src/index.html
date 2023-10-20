@@ -17,18 +17,28 @@
     <h2>
       BE AWARE that this page will reload automaticly every 10 seconds
     </h2>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center naipe_change">
+      <label>Change the Width and Height of the naipe</label>
+      <input type="number" name="ancho" id="ancho" placeholder="Ancho" class="input-group-text m-2">
+      <input type="number" name="alto" id="alto" placeholder="Alto" class="input-group-text m-2">
+
+      <button onclick="changeSize()" class="btn btn-danger m-2">cambiar tamaño dados</button>
+      <button onclick="buttonCard()" class="btn btn-dark m-2">
+        Click to Generate a Random Card
+      </button>
+    </div>
+
       <div id="container" class="card m-5 col-2 ">
-        <div class="card-header naipe1"></div>
+        <div class="card-header fs-1 naipe1"></p></div>
 
         <div id="randomCard" class="card-body"></div>
 
-        <div class="card-header naipe2"></div>
+        <div class="card-header naipe2 fs-1"></div>
       </div>
     </div>
 
-    <button onclick="buttonCard()" class="btn btn-dark">
-      Click to Generate a Random Card
-    </button>
+
+
+
   </body>
 </html>

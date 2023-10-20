@@ -11,7 +11,8 @@ h2 {
 #container {
   margin: 0 auto;
   align-items: center;
-  height: 300px;
+  height: 400px;
+  border-radius: 20px;
 }
 
 .card {
@@ -20,20 +21,21 @@ h2 {
 .naipe1 {
   display: flex;
   justify-content: start;
+  border-radius: 20px;
+
   width: 100%;
   background-color: white;
   border-bottom: none;
 }
 
 .naipe2 {
-  content: "";
-
   display: flex;
   justify-content: end;
   width: 100%;
   background-color: white;
   transform: rotate(180deg) scaleX(-1);
   border-bottom: none;
+  border-radius: 20px;
 }
 
 #randomCard {

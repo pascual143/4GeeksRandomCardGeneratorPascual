@@ -24,10 +24,20 @@ const cards = [
 //  window.location.reload();
 //}, 10000);
 
+window.changeSize = function() {
+  let ancho = document.querySelector("#ancho").value;
+  let alto = document.querySelector("#alto").value;
+
+  document.querySelector(".naipe_change").style.width = ancho + "px";
+  document.querySelector(".naipe_change").style.height = `${alto}px`;
+};
+
 window.onload = function() {
   //window function to button -> onclick reload the page
+
   window.buttonCard = function() {
     //write your code here
+
     generateCard();
 
     //styles of suits
