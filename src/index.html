@@ -13,29 +13,31 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body class="bg-success">
-    <h1>Generator Random Card</h1>
-    <h2>
+    <h1 class="m-3">Generator Random Card</h1>
+    <h2 class="m-3">
       BE AWARE that this page will reload automaticly every 10 seconds
     </h2>
+    <h2 class="m-3">Change the Width and Height of the naipe</h2>
+
     <div class="row justify-content-center naipe_change">
-      <label>Change the Width and Height of the naipe</label>
-      <input type="number" name="ancho" id="ancho" placeholder="Ancho" class="input-group-text m-2">
-      <input type="number" name="alto" id="alto" placeholder="Alto" class="input-group-text m-2">
+      <div class="col-4 m-3">
+        <input type="number" name="ancho" id="ancho" placeholder="Ancho" class="input-group-text m-2">
+        <input type="number" name="alto" id="alto" placeholder="Alto" class="input-group-text m-2">
 
-      <button onclick="changeSize()" class="btn btn-danger m-2">cambiar tamaño dados</button>
-      <button onclick="buttonCard()" class="btn btn-dark m-2">
-        Click to Generate a Random Card
-      </button>
-    </div>
-
-      <div id="container" class="card m-5 col-2 ">
-        <div class="card-header fs-1 naipe1"></p></div>
+        <button onclick="changeSize()" class="btn btn-danger m-2">cambiar tamaño dados</button>
+        <button onclick="buttonCard()" class="btn btn-dark m-2">
+          Click to Generate a Random Card
+        </button>
+      </div>
+      <div id="container" class="card m-5 col-2">
+        <div class="card-header fs-1 naipe1"></div>
 
         <div id="randomCard" class="card-body"></div>
 
         <div class="card-header naipe2 fs-1"></div>
       </div>
     </div>
+  </div>
 
 
 

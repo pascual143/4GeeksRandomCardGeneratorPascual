@@ -18,11 +18,13 @@ h2 {
 .card {
   box-shadow: 5px 7px 5px black;
 }
+.card-body {
+  font-size: 70px;
+}
 .naipe1 {
   display: flex;
   justify-content: start;
   border-radius: 20px;
-
   width: 100%;
   background-color: white;
   border-bottom: none;
