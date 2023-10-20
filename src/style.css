@@ -1,6 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-button,
+.btn,
 h1,
 h2 {
   display: flex;
@@ -26,10 +26,14 @@ h2 {
 }
 
 .naipe2 {
+  content: "";
+
   display: flex;
   justify-content: end;
   width: 100%;
   background-color: white;
+  transform: rotate(180deg) scaleX(-1);
+  border-bottom: none;
 }
 
 #randomCard {

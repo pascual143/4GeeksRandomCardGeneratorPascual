@@ -20,9 +20,9 @@ const cards = [
 ];
 
 //the time to reload the page every 10secs
-window.setTimeout(function() {
-  window.location.reload();
-}, 10000);
+//window.setTimeout(function() {
+//  window.location.reload();
+//}, 10000);
 
 window.onload = function() {
   //window function to button -> onclick reload the page
@@ -30,6 +30,7 @@ window.onload = function() {
     //write your code here
     generateCard();
 
+    //styles of suits
     // function random
     function generateCard() {
       let suit = Math.floor(Math.random() * suits.length);
@@ -53,6 +54,7 @@ window.onload = function() {
   window.buttonCard();
 };
 
+//document.querySelector('#height').value =
 //pseudocode
 // crear html basico
 // crear dos arrays
