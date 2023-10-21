@@ -19,10 +19,10 @@ const cards = [
   "K"
 ];
 
-//the time to reload the page every 10secs
-//window.setTimeout(function() {
-//  window.location.reload();
-//}, 10000);
+the time to reload the page every 10secs
+window.setTimeout(function() {
+window.location.reload();
+}, 10000);
 
 window.changeSize = function() {
   let ancho = document.querySelector("#ancho").value;
